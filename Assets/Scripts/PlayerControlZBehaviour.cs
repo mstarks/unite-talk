@@ -37,7 +37,6 @@ public class PlayerControlZBehaviour : MonoBehaviour
 
 	public void DetermineCollisionResults(Collider aCollider)
 	{
-		Debug.Log("DetermineCollisionResults reached.");
 		const int wealthIncrement = 10;
 		const int healthIncrement = -5;
 

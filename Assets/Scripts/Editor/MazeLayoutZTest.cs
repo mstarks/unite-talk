@@ -33,61 +33,13 @@ public class MazeLayoutZTest
 	//		all of the possible paths through a maze of a given size? NO!
 	//		How large a set is this? It gets bigger than the number of cells!
 	//	Probability for rewards and hazards can be set per cell
+	//  Count the number of moves East and North to know when we've made it to the end
+
 
 
 	//    DONE
 	// A Maze Creator generates a valid Maze Layout
 	// Each cell in a Maze Layout is valid (+ ...)
 	// A valid Maze Cell must have 0, 1, 2, or 3 walls
-
-
-
-	// TODO: Come up with a REASONABLE example instead of MazeCreatorZGenerateAValidMazeTest!
-	//[Test]
-	//public void MazeCreatorZGeneratesAValidMazeTest()
-	//{
-	//	// Arrange
-	//	var mazeCreator = Substitute.For<IMazeCreatorZ>();
-	//	MazeLayoutZ testMazeLayout = new MazeLayoutZ();
-	//	testMazeLayout.RemoveMazeCell(0, WallIndex.NorthWall);
-	//	mazeCreator.CreateMazeLayout().Returns(testMazeLayout);
-
-	//	// Act
-	//	MazeLayoutZ mazeLayout = mazeCreator.CreateMazeLayout();
-	//	bool result = mazeLayout.IsValid();
-
-	//	// Assert
-	//	Assert.IsTrue(result);
-	//}
-
-	//[Test]
-	//public void RemoveWallTest()
-	//{
-	// Arrange
-	//MazeCreatorZBehaviour mazeCreator = new MazeCreatorZBehaviour();
-
-	// Act
-	//mazeCreator.RemoveWall(1, WallIndex.WestWall);
-	//bool result = mazeCreator.DoesWallExist(1, WallIndex.WestWall);
-
-	// Assert
-	//Assert.IsTrue(result);
-	//}
-
-	[Test]
-	public void RemoveWallTest()
-	{
-		// Arrange
-		MazeLayoutZ mazeLayout = new MazeLayoutZ();
-
-		// Act
-		//mazeLayout.RemoveWall(1, WallIndex.WestWall);
-		//bool result = mazeLayout.DoesWallExist(1, WallIndex.WestWall);
-
-		// Assert
-		//Assert.IsTrue(result);
-	}
-
-
 
 }

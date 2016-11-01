@@ -8,9 +8,12 @@ public class MazeCellZBehaviour : MonoBehaviour
 
 	MazeCellZ _mazeCell;
 
-	void Start()
+	void Awake()
 	{
+		// TODO: Make rewards and hazards random.
 		_mazeCell = new MazeCellZ();
+		_mazeCell.HasHazard = true;
+		_mazeCell.HasReward = true;
 	}
 
 	public void SetOuterWallAsBorder(WallIndex wallIndex)
@@ -27,6 +30,8 @@ public class MazeCellZBehaviour : MonoBehaviour
 		{
 			if (!_mazeWalls[(int)wallIndex].IsOuterBorderWall)
 			{
+				_mazeCell.RemoveWall(wallIndex);
+				_mazeWalls[(int)wallIndex].RemoveWall();
 				_mazeWalls[(int)wallIndex].gameObject.SetActive(false);
 			}
 		}
